@@ -1,0 +1,156 @@
+:root {
+  --mainColor: #af8832;
+  --mainText: #1f2124;
+  --whiteText: #fff;
+  --secondText: #92644a;
+  --maxWidth: 1140px;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("./assets/fonts/vazir.ttf") format("truetype-variations");
+  font-weight: 100 900; /* بازه وزن‌ها برای variable font */
+  font-style: normal;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  color: var(--mainText);
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainText);
+  font-size: 15px;
+}
+
+a:hover {
+  color: var(--whiteText);
+}
+
+header {
+  background-color: var(--mainColor);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+nav menu {
+  display: flex;
+}
+
+.menu-item {
+  padding: 8px 16px;
+}
+
+/* category title */
+
+.category-title {
+  margin: 16px 0;
+}
+
+.category-title > h4 {
+  color: var(--secondText);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.category-title > h4::before {
+  content: "";
+  background: var(--secondText);
+  /* border: 0.5px solid var(--mainText); */
+  height: 1px;
+  flex: 1;
+  margin-left: 10px;
+}
+.category-title > h4::after {
+  content: "";
+  background: var(--secondText);
+  height: 1px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.category-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* items */
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 11px 9px 11px 2px rgba(207, 198, 198, 0.75);
+  -webkit-box-shadow: 11px 9px 11px 2px rgba(207, 198, 198, 0.75);
+  -moz-box-shadow: 11px 9px 11px 2px rgba(207, 198, 198, 0.75);
+}
+.item-image {
+  width: 140px;
+}
+
+.item-image > img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.item-title {
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--secondText);
+  margin-bottom: 10px;
+}
+
+.item-ingredient {
+  font-size: 16px;
+  color: #333;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.item-price {
+  font-weight: bold;
+  color: var(--mainText);
+  font-size: 18px;
+}
+
+/* helper css classes */
+.main-container {
+  padding: 10px;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+@media (max-width: 766px) {
+  .category-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
