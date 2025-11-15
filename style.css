@@ -138,6 +138,43 @@ nav menu {
   font-size: 18px;
 }
 
+footer {
+  background: var(--mainText);
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: var(--mainColor);
+  padding: 30px 10px 10px;
+}
+
+footer > p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+footer .address {
+  font-size: 28px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 26px;
+  height: 26px;
+  fill: var(--secondText);
+}
+.social-icon:hover {
+  fill: #fff;
+}
+
 /* helper css classes */
 .main-container {
   padding: 10px;
@@ -152,5 +189,13 @@ nav menu {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  footer > p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  footer .address {
+    font-size: 22px;
   }
 }
