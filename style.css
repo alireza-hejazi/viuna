@@ -60,6 +60,10 @@ nav menu {
   padding: 8px 16px;
 }
 
+.category {
+  margin: 60px 0;
+  /* margin-bottom: 60px; */
+}
 /* category title */
 
 .category-title {
@@ -184,6 +188,98 @@ footer .address {
   margin: auto;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  margin: 120px 0;
+  gap: 20px;
+}
+
+.card {
+  height: 400px;
+  box-shadow: 11px 9px 11px 2px rgba(207, 198, 198, 0.75);
+  -webkit-box-shadow: 11px 9px 11px 2px rgba(207, 198, 198, 0.75);
+  -moz-box-shadow: 11px 9px 11px 2px rgba(207, 198, 198, 0.75);
+  flex: 1;
+  /* min-width: 100px; */
+  /* border: 2px solid red; */
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
+  /* width: 100%; */
+  height: 100%;
+}
+
+.card-link:hover {
+  color: initial;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--secondText);
+}
+
+.card-content {
+  font-size: 20px;
+}
+
+.card-icons {
+  width: 40px;
+  height: 40px;
+  fill: var(--secondText);
+}
+
+.card-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+}
+.card-social-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--secondText);
+}
+
+/* hero section */
+
+.hero {
+  /* background-image: url(./assets/images/1.jpg); */
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.hero:first-child {
+  background-image: url(./assets/images/1.jpg);
+}
+.hero:last-child {
+  background-image: url(./assets/images/2.jpg);
+}
+.hero-image {
+  width: 100%;
+}
+
+.header-logo {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
 @media (max-width: 766px) {
   .category-contents {
     display: grid;
@@ -197,5 +293,17 @@ footer .address {
 
   footer .address {
     font-size: 22px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: auto;
+  }
+
+  .card-link {
+    align-items: center;
   }
 }
