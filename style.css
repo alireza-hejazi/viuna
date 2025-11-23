@@ -264,7 +264,8 @@ footer .address {
   /* background-image: url(./assets/images/1.jpg); */
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: 75%;
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 .hero:first-child {
