@@ -1,8 +1,8 @@
 :root {
-  --mainColor: #412803f8;
-  --mainText: #e0cfb8;
-  --whiteText: #fff;
-  --secondText: #92644a;
+  --mainColor: #2b1a01f8;
+  --mainText: #e7ded2;
+  --whiteText: #f5eded;
+  --secondText: #9e8169;
   --maxWidth: 1140px;
 }
 
@@ -75,7 +75,7 @@ nav menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
 }
 .category-title > h4::before {
@@ -130,7 +130,7 @@ nav menu {
 }
 
 .item-ingredient {
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   line-height: 20px;
   margin-bottom: 10px;
